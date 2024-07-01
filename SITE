@@ -1,0 +1,9 @@
+using flask and nginx as the wsgi server for performance
+
+HAPPY FLOW
+1. show login page
+2. start ws connection to server
+3. on login submit, send creds to server.
+4. wait for response
+5. if sucess, redirect to original website, with a token.
+6. if failure, display feedback to user

@@ -1,0 +1,11 @@
+HAPPY FLOW
+
+1. receive msg from fcm, connect to server@ "wss://auth.jamirograntsaan.nl
+2. receive ws message for auth request
+3. query user
+4. send encrypted, timestamped, Nonced, challenge-response'd, "True" back
+
+
+I don't really care about how you get there :D. 
+
+fcm: firebase cloud messaging - https://firebase.google.com/docs/cloud-messaging/android/client (geen payload enz. nodig)

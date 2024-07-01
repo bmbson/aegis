@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='/img/favicon.ico')}}">
+    <script src="{{ url_for('static', filename='scripts/showDigits.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/main.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/networking.js') }}"></script>
+    
+    
+    <title>AMD Environment Login</title>
+</head>
+<body>
+    <header>
+        <img id="logo" src="{{ url_for ('static', filename='img/AMD_logo_black-3667837137.png') }}" alt="">  
+        <ul id="choiceMenu">
+        </ul>
+    </header>
+    <main>
+        <div class="contentWrapper">
+            <div class="imgWrapper">
+                <img id="img" src="{{ url_for ('static', filename='img/2853458.jpg') }}" alt="">
+            </div>
+            <form id="login-form" class="credentialInputWrapper">
+                <div id="registerNumberWrapper">
+                    <h2>Your registration number is:</h2>
+                    <h2 id="registerNumber"></h2>
+                </div>
+                <label for="usernameField" id="signIn">Login</label>
+                <input class="credInput" id="usernameField" type="text" placeholder="Username">
+
+                <label for="passwordField"></label>
+                <input class="credInput" id="passwordField" type="password" placeholder="Password">
+                <div class="buttonsWrapper">
+                    <input id="login-btn" class="submit" type="button" value="Log In">
+                    <input id="register-btn" class="submit" type="button" value="Register">
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

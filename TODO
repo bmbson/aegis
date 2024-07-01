@@ -1,0 +1,22 @@
+get website running
+communicate from website to server using websockets
+get phone app
+communicate from app to server using websockets
+get biometrics from phone app(sign up)
+in server, use those to create a user
+sign in user based on biometrics(sign in)
+
+--stretch--
+use bluetooth to determine proximity and allow sign in without username
+
+-- mega stretch --
+allow sign in from any device with the app(guest mode type thing)
+
+
+------------
+OPERATIONS
+------------
+
+enable wsgi(gunicorn) for performance and proxying.
+see https://www.digitalocean.com/community/tutorials/how-to-serve-flask-applications-with-uswgi-and-nginx-on-ubuntu-18-04
+and @jamiro look at athena also

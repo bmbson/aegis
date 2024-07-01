@@ -1,0 +1,7 @@
+we give the website a 'verifiable token', that can be sent to the backend. that backend then checks the token by:
+
+1. seeing if it's signed by us(public/private keys)
+2. checking if the 'requester' property is the same as who's verifying
+3. checking if the token is expired or not
+
+

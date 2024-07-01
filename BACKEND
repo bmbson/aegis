@@ -1,0 +1,19 @@
+HAPPYFLOW
+
+part 1: authentication
+1. get authentication request
+2. check creds
+3. wake up phone through fcm and ask for biometrics. send public key
+4. receive answer. will be encrypted with your public key, contain a timestamp, and be Nonced.
+5. if true, redirect to original site, with access token(generate shortuuid) in header
+
+
+part 2: sign in
+1. when auth is required from original site, it will check with auth.jamirograntsaan.nl if the token is valid
+2. if valid, return True
+3. if not, return False, with an error explaining why, and a link where to redirect to.
+
+for demo purposes, tokens will be valid for 30 seconds
+
+
+-- https://auth0.com/docs/secure/tokens/token-best-practices

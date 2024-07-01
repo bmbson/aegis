@@ -1,0 +1,22 @@
+laptop(L) does a request to the authentication server(A), with an email/username.
+then A asks a pre listed phone (P) to send biometrics(B) which are used to decrypt secret(S), which could be an ID, that a 3rd party site then uses. 
+it can trust the ID, because it comes from us(see security considerations)
+
+---
+
+or
+
+---
+
+L does a request to A, and gets UUID4 back. L then changes it's bluetooth(C(omms)) name to that UUID. phone continuesly scans for that, pics it up,
+and asks A if there's a request for that pattern. if that's the case, P prompts the user to use B, and then the user who those biometrics map to is signed in
+
+---
+
+sign up process
+
+---
+
+on sign up, show the user a QR code that they scan with their phone. it'll have a link with a token that the app internally uses to sign up (after asking for biometrics it sends that to the server)
+
+e.g: L > A > L(QRCODE) > P > A > P(confirmation) > L(confirmation)

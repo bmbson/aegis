@@ -1,0 +1,5 @@
+create an authentication platform that uses external biometrics(and maybe proximity) to sign in
+(if no proximity, use a username)
+
+stretch goal: allow any user to sign in through any device, in case a user loses their device
+
